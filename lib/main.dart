@@ -5,6 +5,7 @@ import 'package:ai_camera/screens/register_screen.dart';
 import 'package:ai_camera/widgets/side_menu.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:sizer/sizer.dart';
 //import 'dart:html';
 
 import 'firebase_options.dart';
@@ -23,6 +24,19 @@ class AiCamera extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
+    // return MaterialApp(
+    //   theme: ThemeData(
+    //       fontFamily: 'cairo'
+    //   ),
+    //   debugShowCheckedModeBanner: false,
+    //   home: Sizer(builder: (ctx, or, de) {
+    //     return  GetStarted();
+    //   },
+    //   ),
+    // );
+
+
     return MaterialApp(
       routes: {
         LoginScreen().id: (context) => LoginScreen(),
@@ -31,7 +45,7 @@ class AiCamera extends StatelessWidget {
         SideMenu().id: (context) => SideMenu(),
         HomeScreen().id: (context) => HomeScreen(),
       },
-      initialRoute: 'HomeScreen',
+      initialRoute: 'getstarted',
       debugShowCheckedModeBanner: false,
     );
   }
