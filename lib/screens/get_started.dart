@@ -292,6 +292,8 @@ class _CarouselWithIndicatorState extends State<CarouselWithIndicatorDemo> {
             ),
           );
         }).toList(),
+          )
+        ],
       ),
     ]);
   }
