@@ -75,8 +75,6 @@ class GetStarted extends StatelessWidget {
             ),
           )
         ],
-
-        //Hi there
       ),
     );
   }
