@@ -38,6 +38,9 @@ class AiCamera extends StatelessWidget {
 
 
     return MaterialApp(
+        theme: ThemeData(
+            fontFamily: 'cairo'
+        ),
       routes: {
         LoginScreen().id: (context) => LoginScreen(),
         RegsiterScreen().id: (context) => RegsiterScreen(),

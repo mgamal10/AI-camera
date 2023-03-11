@@ -29,6 +29,7 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
+  carousel_slider: ^4.2.1
   sizer: ^2.0.15
   firebase_core: ^2.7.0
   firebase_auth: ^4.2.9
@@ -66,7 +67,7 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/icons (2).riv
+    - assets/images/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
@@ -94,3 +95,15 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+  fonts:
+    - family: cairo
+      fonts:
+        - asset: assets/fonts/cairo.ttf
+        - asset: assets/fonts/Cairo-Bold.ttf
+          weight: 300
+        - asset: assets/fonts/Cairo-ExtraBold.ttf
+          weight: 400
+        - asset: assets/fonts/Cairo-Black.ttf
+          weight: 700
+        - asset: assets/fonts/Cairo-SemiBold.ttf
+          weight: 200
