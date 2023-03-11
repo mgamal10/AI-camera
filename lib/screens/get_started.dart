@@ -63,15 +63,23 @@ class GetStarted extends StatelessWidget {
                 ),
                 MaterialButton(
                   color: const Color(0xFFFFAA00),
-                  onPressed: (){
+                  onPressed: () {
                     Navigator.pushNamed(context, LoginScreen().id);
                   },
                   height: 4,
-                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(30)),
                   child: Container(
-                    width: MediaQuery.of(context).size.width*0.65,
+                    width: MediaQuery.of(context).size.width * 0.65,
                     alignment: Alignment.center,
-                    child: Text('Login',style: TextStyle(color: Colors.white,fontWeight:FontWeight.w400,fontSize: 30),),),
+                    child: Text(
+                      'Login',
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.w400,
+                          fontSize: 30),
+                    ),
+                  ),
                 ),
                 // GestureDetector(
                 //     onTap: () {
@@ -84,15 +92,20 @@ class GetStarted extends StatelessWidget {
 
                 MaterialButton(
                   color: const Color(0xFFFFAA00),
-                  onPressed: (){
+                  onPressed: () {
                     Navigator.of(context).pushNamed(RegsiterScreen().id);
                   },
                   height: 4,
-                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(30)),
                   child: Container(
-                    width: MediaQuery.of(context).size.width*0.65,
+                    width: MediaQuery.of(context).size.width * 0.65,
                     alignment: Alignment.center,
-                    child: Text('Sign up',style: TextStyle(color: Colors.white,fontSize: 30),),),
+                    child: Text(
+                      'Sign up',
+                      style: TextStyle(color: Colors.white, fontSize: 30),
+                    ),
+                  ),
                 ),
 
                 // GestureDetector(
@@ -117,7 +130,6 @@ class GetStarted extends StatelessWidget {
                 //     ),
                 //   ),
                 // )
-
               ],
             ),
           ),
@@ -193,7 +205,6 @@ class GetStarted extends StatelessWidget {
 // ),
 // )
 
-
 final List<Widget> tips = [
   SlideTip(
       image: "assets/images/forgot-password.png",
@@ -216,7 +227,6 @@ class SlideTip extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-
         Container(
           color: Colors.red,
           width: MediaQuery.of(context).size.width,
@@ -229,7 +239,8 @@ class SlideTip extends StatelessWidget {
         Text(
           text,
           textAlign: TextAlign.center,
-          style: TextStyle(color: Colors.white, fontWeight: FontWeight.w200, fontSize: 24),
+          style: TextStyle(
+              color: Colors.white, fontWeight: FontWeight.w300, fontSize: 24),
         )
       ],
     );
